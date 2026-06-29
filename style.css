@@ -1122,6 +1122,10 @@ th{
     align-items:center;
     width:100%;
 }
+/* ASCUNDE MENIUL DE MOBILE PE DESKTOP */
+.mobile-nav{
+    display:none;
+}
 
 @media (max-width:768px){
 
