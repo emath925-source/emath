@@ -1017,7 +1017,22 @@ a:active{
       TELEFOANE
 ========================== */
 
+/* ASCUNDE MENIUL DE MOBILE PE DESKTOP */
+.mobile-nav{
+    display:none;
+}
+/* doar pe telefon */
 @media (max-width:768px){
+
+    nav{
+        display:none !important;
+    }
+
+    .mobile-nav{
+        display:block;
+    }
+
+@media{
 .hero{
 
     width:92%;
@@ -1121,10 +1136,6 @@ th{
     justify-content:space-between;
     align-items:center;
     width:100%;
-}
-/* ASCUNDE MENIUL DE MOBILE PE DESKTOP */
-.mobile-nav{
-    display:none;
 }
 
 @media (max-width:768px){
@@ -1311,16 +1322,7 @@ th{
     display:flex;
 }
 
-/* doar pe telefon */
-@media (max-width:768px){
-
-    nav{
-        display:none !important;
-    }
-
-    .mobile-nav{
-        display:block;
-    }
-}
 
 }
+
+
