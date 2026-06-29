@@ -1027,7 +1027,7 @@ a:active{
  .hero-logo{
 
     width:90%;
-    max-width:260px;
+    max-width:460px;
 }
 
  .hero h1{
@@ -1064,7 +1064,7 @@ a:active{
 
  table{
 
-    width:98%;
+    width:100%;
     font-size:14px;
 }
 
@@ -1148,50 +1148,58 @@ th{
 
     /* NAVBAR */
 
-    nav{
-        display:block;
-        position:static;
-        padding:0;
-    }
+nav{
+    display:block;
+    position:static;
 
-    .nav-top{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        padding:10px 15px;
-    }
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+   .nav-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    box-sizing:border-box;
+}
 
     .logo img{
-        max-height:55px;
+        max-height:65px;
     }
 
-    .menu-toggle{
-        display:block;
-        color:#FDBD01;
-        font-size:34px;
-        cursor:pointer;
-        user-select:none;
-    }
+ .menu-toggle{
+    display:block;
+    color:#FDBD01;
+    font-size:34px;
+    cursor:pointer;
+    user-select:none;
 
-    .menu{
-        display:none;
-        flex-direction:column;
-        width:100%;
-        background:#1C1C1C;
-    }
+    margin-left:auto;
+}
 
-    .menu.active{
-        display:flex;
-    }
+  .menu{
+    display:none;
+    flex-direction:column;
 
-    .menu li{
-        width:100%;
-    }
+    width:100%;
+    margin:0;
+    padding:0;
 
-    .menu li a{
-        display:block;
-        padding:15px;
-    }
+    background:#1C1C1C;
+}
+.menu li{
+    list-style:none;
+    width:100%;
+}
+
+.menu li a{
+    display:block;
+    width:100%;
+    padding:15px 20px;
+    box-sizing:border-box;
+}
 
     /* SEARCH */
 
@@ -1272,7 +1280,7 @@ th{
     /* FORMULAR */
 
     .contact-form{
-        width:92%;
+        width:100%;
         margin:auto;
     }
 
