@@ -1018,5 +1018,92 @@ a:active{
 ========================== */
 
 @media (max-width:768px){
+.hero{
 
+    width:92%;
+    padding:40px 20px;
+}
+
+ .hero-logo{
+
+    width:90%;
+    max-width:260px;
+}
+
+ .hero h1{
+
+    font-size:32px;
+}
+
+ .hero-text{
+
+    font-size:18px;
+}
+
+ .cards{
+
+    flex-direction:column;
+    align-items:center;
+}
+
+ .card{
+
+    width:90%;
+}
+
+ .search-container{
+
+    width:100%;
+    margin:15px 0;
+}
+
+ #searchInput{
+
+    width:100%;
+}
+
+ table{
+
+    width:98%;
+    font-size:14px;
+}
+
+ 
+td,
+th{
+
+    padding:8px;
+}
+
+ .county-buttons{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+ .county-btn{
+
+    width:90%;
+    text-align:center;
+}
+
+ .contact-form{
+
+    width:95%;
+}
+
+ .contact-form input,
+.contact-form textarea{
+
+    width:100%;
+}
+
+ .footer{
+
+    padding:20px;
+    font-size:14px;
+}
+
+ 
 }
