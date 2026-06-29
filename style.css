@@ -1108,9 +1108,9 @@ th{
  
 }
 
-/* =====================================================
-                    RESPONSIVE
-===================================================== */
+/* ==========================
+      TELEFOANE
+========================== */
 
 .menu-toggle{
     display:none;
@@ -1123,33 +1123,9 @@ th{
     width:100%;
 }
 
-.menu-toggle{
-    display:none;
-}
-
 @media (max-width:768px){
 
     /* GENERAL */
-
-nav{
-
-    display:block;
-
-    padding:0;
-
-    position:static;
-}
- .nav-top{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:10px 15px;
-}
-
 
     body{
         font-size:16px;
@@ -1173,87 +1149,66 @@ nav{
     /* NAVBAR */
 
     nav{
+        display:block;
+        position:static;
+        padding:0;
+    }
+
+    .nav-top{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:10px 15px;
+    }
+
+    .logo img{
+        max-height:55px;
+    }
+
+    .menu-toggle{
+        display:block;
+        color:#FDBD01;
+        font-size:34px;
+        cursor:pointer;
+        user-select:none;
+    }
+
+    .menu{
+        display:none;
         flex-direction:column;
-        align-items:flex-start;
-        padding:10px;
+        width:100%;
+        background:#1C1C1C;
     }
 
-    .logo{
-        align-self:center;
+    .menu.active{
+        display:flex;
     }
-
-   .logo img{
-
-    max-height:55px;
-}
-
-  .menu{
-
-    display:none;
-
-    flex-direction:column;
-
-    width:100%;
-
-    background:#1C1C1C;
-
-    margin-top:10px;
-}
-
-.menu.active{
-
-    display:flex;
-}
-
- .menu{
-
-    display:none;
-
-    flex-direction:column;
-
-    width:100%;
-
-    background:#1C1C1C;
-}
-
-.menu.active{
-
-    display:flex;
-}
 
     .menu li{
         width:100%;
     }
 
     .menu li a{
+        display:block;
         padding:15px;
     }
 
     /* SEARCH */
 
     .search-container{
-        width:100%;
-        margin:15px 0;
+        display:none;
+        width:90%;
+        margin:15px auto;
+    }
+
+    .search-container.active{
+        display:block;
     }
 
     #searchInput{
         width:100%;
         box-sizing:border-box;
     }
-
- .search-container{
-
-    display:none;
-
-    width:90%;
-
-    margin:15px auto;
-}
-
-.search-container.active{
-
-    display:block;
-}
 
     /* HERO */
 
@@ -1333,18 +1288,5 @@ nav{
         padding:20px;
         font-size:14px;
     }
-.menu-toggle{
 
- .menu-toggle{
-
-    display:block;
-
-    color:#FDBD01;
-
-    font-size:34px;
-
-    cursor:pointer;
-
-    user-select:none;
-}
 }
