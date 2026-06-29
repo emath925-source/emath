@@ -212,7 +212,24 @@ menuToggle.addEventListener("click", function(){
     }
 
 });
+<script>
 
+const toggle = document.getElementById("mobile-toggle");
+const menu = document.getElementById("mobile-menu");
+
+toggle.addEventListener("click", () => {
+
+    menu.classList.toggle("active");
+
+    if(menu.classList.contains("active")){
+        toggle.textContent = "✕";
+    }else{
+        toggle.textContent = "☰";
+    }
+
+});
+
+</script>
 </script> 
 
 
