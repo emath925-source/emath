@@ -1176,21 +1176,24 @@ nav{
     cursor:pointer;
     user-select:none;
 
-    margin-left:auto;
+    margin-left:none;
 }
 
   .menu{
     display:none;
     flex-direction:column;
 
-    width:100%;
+    width:100%; 
+    background:#1C1C1C;
     margin:0;
     padding:0;
 
     background:#1C1C1C;
 }
+    .menu.active{
+        display:flex;
+    }
 .menu li{
-    list-style:none;
     width:100%;
 }
 
