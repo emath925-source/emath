@@ -1112,6 +1112,10 @@ th{
                     RESPONSIVE
 ===================================================== */
 
+.menu-toggle{
+    display:none;
+}
+
 @media (max-width:768px){
 
     /* GENERAL */
@@ -1155,10 +1159,23 @@ th{
         max-height:60px;
     }
 
-    .menu{
-        flex-direction:column;
-        width:100%;
-    }
+  .menu{
+
+    display:none;
+
+    flex-direction:column;
+
+    width:100%;
+
+    background:#1C1C1C;
+
+    margin-top:10px;
+}
+
+.menu.active{
+
+    display:flex;
+}
 
     .menu li{
         width:100%;
@@ -1258,5 +1275,20 @@ th{
         padding:20px;
         font-size:14px;
     }
+.menu-toggle{
 
+    display:block;
+
+    color:#FDBD01;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+    margin-left:auto;
+
+    padding:10px 20px;
+}
+
+ 
 }
