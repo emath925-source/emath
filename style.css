@@ -1,0 +1,1016 @@
+ /* =========================
+   STILURI GENERALE
+========================= */
+
+body{
+    margin:0;
+    font-family:'Fredoka', sans-serif;
+    background:#fffdf5;
+    color:#222;
+}
+
+h1, h2{
+
+    color:#FDBD01;
+
+    font-family:'Fredoka', sans-serif;
+
+    letter-spacing:1px;
+
+    letter-spacing:1px;
+
+}
+
+button,
+input,
+textarea,
+select{
+
+    font-family:inherit;
+}
+
+/* =========================
+   BARA DE NAVIGARE
+========================= */
+
+nav{
+    display:flex;
+    align-items:center;
+background: #1C1C1C;
+
+    position:sticky;
+    top:0;
+    z-index:9999;
+}
+
+/* Logo */
+
+.logo img{
+    max-height:70px;
+    width:auto;
+    margin:5px 15px;
+}
+
+/* Meniu */
+
+.menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li a{
+    display:block;
+    padding:15px 20px;
+    color:white;
+    text-decoration:none;
+}
+
+.menu li a:hover{
+
+    background:#FDBD01;
+
+    color:black;
+
+    transform:translateY(-2px);
+
+    transition:0.3s;
+}
+
+/* =========================
+   DROPDOWN RESURSE
+========================= */
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background:#FFFFF4;
+    min-width:220px;
+
+    list-style:none;
+    padding:0;
+    margin:0;
+
+    border:2px solid #E41B17;
+    z-index:1000;
+}
+
+.dropdown-content li a{
+    color:black;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* =========================
+   BARA DE CĂUTARE
+========================= */
+
+.search-container{
+    position:relative;
+    margin-left:auto;
+    margin-right:20px;
+}
+
+#searchInput{
+    width:250px;
+    padding:8px;
+
+    border:2px solid #FDBD01;
+    border-radius:5px;
+
+    outline:none;
+}
+
+/* Rezultate */
+
+#materialList{
+    display:none;
+
+    position:absolute;
+    top:100%;
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    list-style:none;
+    padding:0;
+    margin:0;
+
+    border:1px solid #E41B17;
+
+    max-height:250px;
+    overflow-y:auto;
+
+    z-index:1000;
+}
+
+#materialList li{
+    border-bottom:1px solid #eee;
+}
+
+#materialList li a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:black;
+}
+
+#materialList li a:hover{
+    background:#FDBD01;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+/* =========================
+   TABELE
+========================= */
+
+table{
+    width:90%;
+    margin:30px auto;
+
+    border-collapse:collapse;
+    background:#033E3E;
+    color:white;
+}
+
+
+th{
+    background:#E41B17;
+    color:#FFD700;
+}
+
+td, th{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+/* =========================
+   BUTOANE GENERALE
+========================= */
+
+.btn{
+    background:#E41B17;
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:5px;
+    text-decoration:none;
+
+    display:inline-block;
+}
+
+.btn:hover{
+    background:#FDBD01;
+    color:black;
+}
+
+
+/* =========================
+   PAGINA CONTACT
+========================= */
+
+.contact-page{
+    background:black;
+    background-image:url("Imagini/Patratele.jpg");
+
+    background-size:1600px 1000px;
+    background-position:center top;
+    background-repeat:repeat;
+
+    min-height:100vh;
+    color:white;
+}
+
+/* CONTACT MODERN */
+
+.contact-header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+
+.contact-description{
+    width:70%;
+    margin:auto;
+    color:white;
+    line-height:1.6;
+}
+
+.contact-cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+    margin-top:30px;
+}
+
+.contact-card{
+    width:320px;
+
+  background:#1C1C1C;
+
+    border:3px solid #FFD700;
+
+    border-radius:20px;
+
+    color:black;
+
+    box-shadow:0 10px 15px rgba(0,0,0,0.12);
+    border-radius:15px;
+
+    padding:25px;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.contact-card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+.contact-card h2{
+    color:#FFD700;
+    margin-top:0;
+}
+
+.contact-card p{
+    line-height:1.8;
+}
+
+/* =========================
+   PAGINA DESPRE NOI
+========================= */
+
+.about-page{
+background:black;
+    background-image:url("Imagini/Patratele.jpg");
+
+    background-size:1600px 1000px;
+    background-position:center top;
+    background-repeat:repeat;
+
+    min-height:100vh;
+
+    color:white;
+}
+
+.about-header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.about-logo{
+    max-width:250px;
+    height:auto;
+
+    display:block;
+    margin:0 auto 15px auto;
+}
+
+.about-page h1{
+    color:#FFD700;
+    font-size:40px;
+}
+
+.about-page .animated-title{
+    color:red;
+    font-size:100px;
+
+    margin:10px 0;
+
+    animation:fadeZoom 2.5s ease-in-out infinite alternate;
+}
+
+.about-text{
+    width:70%;
+    margin:20px auto;
+
+    text-align:center;
+    color:white;
+}
+
+/* Carduri */
+
+.about-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    padding:40px;
+}
+
+.card{
+     background:white;
+
+    border:3px solid #FFD700;
+
+    border-radius:20px;
+
+    color:black;
+
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+
+    width:280px;
+    padding:20px;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+.card h2{
+    color:#FFD700;
+}
+
+.card p{
+    text-align:center;
+    line-height:1.5;
+}
+
+.card-icon{
+
+    font-size:60px;
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+    filter:drop-shadow(0 0 8px rgba(255,215,0,0.5));
+
+    animation:bounce 2s infinite;
+}
+
+/* Buton Înapoi */
+
+.back-home{
+    text-align:center;
+    margin:50px 0;
+}
+
+.btn-home{
+    display:inline-block;
+
+    padding:12px 20px;
+
+    background:#FFD700;
+    color:black;
+
+    text-decoration:none;
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.btn-home:hover{
+    background:red;
+    color:white;
+
+    transform:scale(1.05);
+}
+
+/* =========================
+   PAGINA ACASĂ
+========================= */
+
+.home-page{
+     background-image:url("Imagini/Math_design.jpg");
+
+    background-size:1600px 900px;
+    background-position:center top;
+    background-repeat:no-repeat;
+
+    min-height:100vh;
+
+    color:black;
+    min-height:100vh;
+}
+
+
+
+/* Hero */
+
+
+
+.hero-logo{
+    max-width:400px;
+    width:80%;
+    height:auto;
+
+    animation:fadeInDown 2s ease;
+
+    margin-bottom:20px;
+}
+
+.hero-subtitle{
+    animation:fadeIn 3s ease;
+}
+
+.hero-text{
+    animation:fadeIn 4s ease;
+}
+
+
+
+/* Carduri */
+
+.cards{
+    display:flex;
+    justify-content:center;
+
+    gap:20px;
+    flex-wrap:wrap;
+
+    padding:40px;
+}
+
+.card-icon{
+    font-size:50px;
+    text-align:center;
+
+    animation:bounce 2s infinite;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+.card{
+    background:#1C1C1C;
+    color:#FFFFF4;
+    border:2px solid #FDBD01;
+    border-radius:15px;
+    width:250px;
+    padding:20px;
+    transition:0.3s;
+}
+
+ .card:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+        0 0 20px rgba(255,0,0,0.5),
+        0 0 15px rgba(255,215,0,0.5);
+}
+
+.card h2{
+    color:#FDBD01;
+    text-align:center;
+}
+
+
+/* =========================
+   ANIMAȚII
+========================= */
+
+@keyframes fadeZoom{
+
+    from{
+        transform:scale(1);
+        opacity:0.6;
+    }
+
+    to{
+        transform:scale(1.1);
+        opacity:1;
+    }
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes fadeInDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+/* Header Contact */
+
+.contact-header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.contact-header p{
+    width:70%;
+    margin:auto;
+    color:white;
+    line-height:1.6;
+}
+
+/* Titluri din chenar */
+
+.contact-container h2{
+    color:red;
+    margin-top:0;
+}
+
+
+/* FOOTER */
+
+.footer{
+
+     background:
+    linear-gradient(
+        90deg,
+        #111111,
+        #8b0000
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    margin-top:60px;
+
+    border-top:3px solid #FFD700;
+}
+
+.footer h3{
+
+    color:#FFD700;
+
+    margin-bottom:10px;
+}
+
+.footer p{
+
+    margin:8px 0;
+}
+
+.footer hr{
+
+    width:60%;
+
+    margin:20px auto;
+
+    border:1px solid red;
+}
+
+.copyright{
+
+    color:#cccccc;
+
+    font-size:14px;
+}
+
+/* ====== Resurse ====== */
+
+.resurse{
+    background:
+   linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("Imagini/Patratele_albe.jpg");
+
+    background-size:2000px 1200px;
+    background-position:center top;
+    background-repeat:repeat;
+
+    min-height:100vh;
+ color:white;
+
+}
+
+/* ====== Materiale Speciale ====== */
+
+.materiale{
+    background:
+   linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("Imagini/Patratele_albe.jpg");
+
+    background-size:2000px 1200px;
+    background-position:center top;
+    background-repeat:repeat;
+
+    min-height:100vh;
+ color:white;
+
+}
+
+/* LINK-URI (toate linkurile din site) */
+a{
+    color:#FFD700;
+    text-decoration:none;
+}
+
+a:hover{
+    color:red;
+    transition:0.3s;
+}
+
+a:visited{
+    color:#b30000;
+}
+
+a:active{
+    color:#1C1C1C;
+}
+
+/* BUTOANE (NU sunt afectate de stilul de link) */
+.btn,
+.btn-hero,
+.btn-home{
+    color:white;
+}
+
+
+
+/* PAGINI RESURSE */
+
+.resurse-page{
+    background-image:url("Imagini/Patratele_albe.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    min-height:100vh;
+}
+
+.page-header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.page-header h1{
+    font-size:50px;
+    color:#FDBD01;
+}
+
+.page-header p{
+    font-size:18px;
+    width:70%;
+    margin:auto;
+}
+
+.resource-card{
+
+    width:80%;
+    max-width:900px;
+
+    margin:30px auto;
+
+    background:#1C1C1C;
+
+    border:3px solid #FDBD01;
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.resource-card h2{
+    color:#FDBD01;
+    text-align:center;
+}
+
+
+.county-buttons{
+
+    display:flex;
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:20px;
+}
+
+.county-btn{
+
+    background:#1C1C1C;
+
+    color:white;
+
+    border:2px solid #FDBD01;
+
+    border-radius:12px;
+
+    padding:12px 20px;
+
+    min-width:140px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.county-btn:hover{
+
+    background:#E41B17;
+
+    color:#FFFFF4;
+
+    border-color:#FFD700;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 0 15px rgba(255,215,0,0.5);
+}
+
+.btn,
+.btn:visited,
+.btn-hero,
+.btn-hero:visited,
+.btn-home,
+.btn-home:visited{
+    color:#E41B17;
+}
+
+
+
+/*=================
+  Buton principal
+===================*/
+
+.btn-hero{
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#FDBD01;
+    color:black;
+
+    text-decoration:none;
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+box-shadow:
+        0 5px 15px rgba(255,215,0,0.5);
+}
+
+.btn-hero:hover{
+    background:#E41B17;
+    color:#FFFFF4;
+
+    transform:scale(1.05);
+}
+
+
+
+/* PAGINI BAC */
+
+.page-header{
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.page-header h1{
+
+    font-size:50px;
+
+    color:#FDBD01;
+
+    text-shadow:
+        2px 2px 0 #E41B17;
+
+    margin-bottom:10px;
+}
+
+.page-header p{
+
+    color:white;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+}
+
+
+
+
+table{
+
+    width:85%;
+
+    margin:40px auto;
+
+    border-collapse:collapse;
+
+    background:#033E3E;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.3);
+}
+
+th{
+
+    background:#E41B17;
+
+    color:#FFD700;
+
+    font-size:18px;
+
+    padding:15px;
+}
+
+td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+
+
+/* rânduri alternate */
+
+
+tr:nth-child(even){
+
+    background:#0A4A4A;
+}
+
+tr:hover{
+
+    background:#145959;
+
+    transition:0.3s;
+}
+
+a{
+    color:#FDBD01;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#b30000;
+    transition:0.3s;
+}
+
+a:visited{
+    color:#FFFFF4;
+}
+
+a:active{
+    color:#1C1C1C;
+}
+
+
+
+
+.contact-form{
+
+    width:600px;
+
+    height:365px;
+
+    margin:40px auto;
+
+    background:#1C1C1C;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:3px solid #FDBD01;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:95%;
+
+    height:30px;
+
+    padding:12px;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    border:2px solid #FDBD01;
+
+    background:white;
+
+    font-family:'Fredoka';
+
+    font-size:16px;
+}
+
+.contact-form textarea{
+
+    resize:both;
+}
+
+
