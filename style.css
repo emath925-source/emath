@@ -1148,22 +1148,6 @@ th{
 
     /* NAVBAR */
 
-nav{
-    display:block;
-    position:static;
-
-    width:100%;
-    padding:0;
-    margin:0;
-}
-
-   .nav-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    width:100%;
-    box-sizing:border-box;
-}
 
     .logo img{
         max-height:65px;
@@ -1179,30 +1163,6 @@ nav{
     margin-left:none;
 }
 
-  .menu{
-    display:none;
-    flex-direction:column;
-
-    width:100%; 
-    background:#1C1C1C;
-    margin:0;
-    padding:0;
-
-    background:#1C1C1C;
-}
-    .menu.active{
-        display:flex;
-    }
-.menu li{
-    width:100%;
-}
-
-.menu li a{
-    display:block;
-    width:100%;
-    padding:15px 20px;
-    box-sizing:border-box;
-}
 
     /* SEARCH */
 
@@ -1299,5 +1259,64 @@ nav{
         padding:20px;
         font-size:14px;
     }
+
+ /* =========================
+   NAVBAR MOBILE
+========================= */
+
+.mobile-nav{
+    display:none;
+    background:#1C1C1C;
+    width:100%;
+}
+
+.mobile-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 15px;
+}
+
+.mobile-nav .logo img{
+    max-height:55px;
+}
+
+.mobile-toggle{
+    font-size:34px;
+    color:#FDBD01;
+    cursor:pointer;
+    user-select:none;
+}
+
+/* meniul ascuns */
+.mobile-menu{
+    display:none;
+    flex-direction:column;
+    background:#1C1C1C;
+}
+
+.mobile-menu a{
+    padding:15px;
+    color:white;
+    text-decoration:none;
+    border-top:1px solid #333;
+}
+
+/* deschis */
+.mobile-menu.active{
+    display:flex;
+}
+
+/* doar pe telefon */
+@media (max-width:768px){
+
+    nav{
+        display:none !important;
+    }
+
+    .mobile-nav{
+        display:block;
+    }
+}
 
 }
