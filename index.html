@@ -179,6 +179,30 @@ for(let i = 0; i < li.length; i++){ let txtValue = li[i].textContent || li[i].in
 if(txtValue.toUpperCase().indexOf(filter) > -1){ li[i].style.display = ""; found = true; }else{ li[i].style.display = "none"; } } 
 if(!found){ ul.style.display = "none"; } } 
 
+	const menuToggle = document.getElementById("menu-toggle");
+
+const menu = document.querySelector(".menu");
+
+const search = document.querySelector(".search-container");
+
+menuToggle.addEventListener("click", function(){
+
+    menu.classList.toggle("active");
+
+    search.classList.toggle("active");
+
+    if(menu.classList.contains("active")){
+
+        menuToggle.innerHTML="✕";
+
+    }else{
+
+        menuToggle.innerHTML="☰";
+
+    }
+
+});
+
 </script> 
 
 
