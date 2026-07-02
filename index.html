@@ -10,37 +10,20 @@
 
 <link rel="icon" type="image/png" href="Imagini/logo_eMath__5_-removebg-preview.png">
 
-
-	
-
 <meta name="robots" content="noindex, nofollow">
-
-
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head> 
 
 <body class="home-page"> 
 
-	<nav>
-
-    <div class="nav-top">
-
-        <div class="logo">
-            <img src="Imagini/logo_eMath__3_-removebg-preview.png">
-        </div>
-
-        <div class="menu-toggle" id="menu-toggle">☰</div>
-
-    </div>
-
-
-		<nav>
+<nav>
 
     <div class="logo">
         <img src="Imagini/logo_eMath__3_-removebg-preview.png" alt="eMath Logo">
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
     </div>
 
     <ul class="menu">
@@ -168,7 +151,6 @@
         </ul>
 
     </div>
-		</div>
 
 </nav>
 
@@ -187,47 +169,6 @@ for(let i = 0; i < li.length; i++){ let txtValue = li[i].textContent || li[i].in
 if(txtValue.toUpperCase().indexOf(filter) > -1){ li[i].style.display = ""; found = true; }else{ li[i].style.display = "none"; } } 
 if(!found){ ul.style.display = "none"; } } 
 
-	const menuToggle = document.getElementById("menu-toggle");
-
-const menu = document.querySelector(".menu");
-
-const search = document.querySelector(".search-container");
-
-menuToggle.addEventListener("click", function(){
-
-    menu.classList.toggle("active");
-
-    search.classList.toggle("active");
-
-    if(menu.classList.contains("active")){
-
-        menuToggle.innerHTML="✕";
-
-    }else{
-
-        menuToggle.innerHTML="☰";
-
-    }
-
-});
-<script>
-
-const toggle = document.getElementById("mobile-toggle");
-const menu = document.getElementById("mobile-menu");
-
-toggle.addEventListener("click", () => {
-
-    menu.classList.toggle("active");
-
-    if(menu.classList.contains("active")){
-        toggle.textContent = "✕";
-    }else{
-        toggle.textContent = "☰";
-    }
-
-});
-
-</script>
 </script> 
 
 
@@ -285,21 +226,6 @@ toggle.addEventListener("click", () => {
     </p>
 
 </footer>
-	<script>
-
-const menuToggle =
-document.getElementById("menu-toggle");
-
-const menu =
-document.querySelector(".menu");
-
-menuToggle.addEventListener("click", ()=>{
-
-    menu.classList.toggle("active");
-
-});
-
-</script>
 
 </body> 
 
